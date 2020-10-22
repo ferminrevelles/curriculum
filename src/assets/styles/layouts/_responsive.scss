@@ -1,0 +1,68 @@
+/* STYLE RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+  /* poner cabecera de descripción a la izquierda */
+
+  .header__flex-container {
+    position: relative;
+    left: 15%;
+  }
+
+  /* Cambio de formato del title de la página */
+  #title_menu {
+    order: 1;
+    width: 100%;
+  }
+
+  /* estilo de párrafo de descripción de lo que es la narrativa */
+
+  .main__box__description {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 3% 2%;
+    justify-content: center;
+    left: 3%;
+    background-color: rgb(233, 220, 220);
+  }
+
+  .main__box__description__name_personal {
+    font-size: 5vw;
+  }
+
+  .main__box__description__datesPersonal {
+    font-size: 3vw;
+  }
+
+  .main__box__h1__positionImage {
+    position: relative;
+    left: 5%;
+    font-size: 6vw;
+  }
+
+  .main__box_h1__hidden {
+    display: none;
+  }
+
+  .main__box__contImage {
+    width: 20%;
+    position: absolute;
+    left: 77%;
+    top: 10%;
+    border-radius: 10vw;
+  }
+
+  .main__box__list__image {
+    display: none;
+  }
+
+  .main__box__list__text {
+    font-family: 'Pangolin', cursive, sans-serif;
+    font-size: 2.4vw;
+  }
+
+  .footer__flex-container {
+    font-size: 2vw;
+  }
+}

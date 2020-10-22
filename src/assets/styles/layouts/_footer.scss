@@ -1,0 +1,38 @@
+@function resize ($size) {
+  @return $size*1.5;
+}
+
+/* Definimos el pie de página */
+
+footer {
+  display: flex;
+  width: 100%;
+}
+
+.footer__flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: black;
+  flex-direction: column;
+  text-align: center;
+  font-size: resize(1.2) * 1vw;
+}
+
+.footer__flex-container__link {
+  text-decoration: none;
+  border-bottom: 0.1em dotted;
+  margin: 0% 0% 0% 5%;
+}
+
+.footer__flex-container > div {
+  background-color: black;
+  color: white;
+  margin: 1% auto 1% auto;
+  width: 100%;
+}
+
+//Define separación entre iconos y texto de los enlaces a las redes sociales del pie de página
+
+i {
+  padding-right: 1%;
+}

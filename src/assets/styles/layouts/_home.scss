@@ -1,0 +1,180 @@
+/* Define el cuerpo del HTML común para todos los HTML */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 1.2vw;
+}
+
+body {
+  background-color: #5c5555;
+  color: #000;
+  margin: auto;
+  width: 100%;
+}
+
+.skin_position {
+  position: relative;
+  display: inline-block;
+}
+
+.skin_image {
+  vertical-align: top;
+  overflow: auto;
+}
+
+div.main__box img {
+  max-width: 100%;
+}
+
+/* flex-container para colocar el título descriptivo del contenido de la web */
+.header__flex-container {
+  margin: 1% 0;
+  position: relative;
+  left: 75%;
+  width: 20%;
+}
+
+.header__flex-container > div {
+  background: linear-gradient(to bottom, black, pink);
+  color: white;
+  border-radius: 10vw;
+  text-align: center;
+  font-family: 'Grand Hotel', cursive, sans-serif;
+  font-size: 2.5vw;
+  padding: 5% 0%;
+}
+
+/* Clase para esconder un elemento que será visible únicamente a los lectores de pantalla (aplicado para mejorar la accesibilidad: enlace que permite ir directamente al contenido principal de la página y acceso a la visualización directa del video en Youtube */
+
+.body__sr {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Cuerpo index.html */
+
+/* Aquí se define el estilo sección */
+
+.main__box {
+  background-color: orange;
+  width: 80%;
+  height: 40%;
+  position: relative;
+  margin: 1% auto;
+  padding: 1% 0%;
+  border-radius: 2vw;
+}
+
+main {
+  & .main__box {
+    & h1 {
+      font-family: 'Aladin', cursive, sans-serif;
+      font-size: 3vw;
+      text-align: left;
+      text-align: justify;
+      margin-left: 10%;
+      width: 80%;
+    }
+
+    & hr {
+      background-color: black;
+      height: 0.5vw;
+    }
+  }
+}
+
+.main__box__h1__positionImage {
+  position: absolute;
+  right: 5%;
+}
+
+.main__box__description {
+  width: 65%;
+  height: 100%;
+  margin: 3% 2%;
+  padding: 0 3%;
+  justify-content: center;
+  left: 3%;
+  background-color: $background-color-description;
+}
+
+.main__box__description__name_personal,
+.main__box__description__title {
+  font-family: 'Patrick Hand', cursive, sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.main__box__description__datesPersonal {
+  font-family: 'Chilanka', cursive, sans-serif;
+  font-size: 1.8vw;
+}
+
+.main__box__description__email {
+  color: blue;
+  text-decoration: none;
+}
+
+.main__box__contImage {
+  background-color: white;
+  width: 20%;
+  left: 6%;
+  margin: 1vw auto;
+  border-radius: 20vw;
+}
+
+.main__box__list {
+  width: 90%;
+  margin: 1% auto;
+  border: solid;
+  border-color: gray;
+}
+
+.main__box__list__image {
+  width: 12%;
+  left: 5%;
+  margin: 3% 5%;
+}
+
+.main__box__list__text {
+  font-family: $font-family-googlefonts-pangolin;
+  font-size: 1.5vw;
+}
+
+.main__box__tableLanguage {
+  border: 3px solid;
+  border-collapse: collapse;
+  margin: 1% auto;
+  width: 80%;
+  text-align: center;
+  font-family: $font-family-googlefonts-pangolin;
+  font-size: 1.5vw;
+}
+
+.main__box__tableLanguage td,
+th {
+  border: green 4px solid;
+}
+
+.main__box__tableLanguage td {
+  background-color: lightslategray;
+  color: lightyellow;
+}
+
+a {
+  color: $link-color;
+}
+
+abbr {
+  text-decoration: none;
+}
